@@ -64,3 +64,9 @@ print(f"Bad bucketize: {bad_bucket_time:.4f} sec")
 print(f"Good bucketize: {good_bucket_time:.4f} sec")
 print(f"Bad flatten: {bad_flatten_time:.4f} sec")
 print(f"Good flatten: {good_flatten_time:.4f} sec")
+
+# Bad bucketize: 8.3587 sec
+# Good bucketize: 0.0203 sec
+# Bad flatten: 0.0013 sec
+# Good flatten: 0.0478 sec
+# (Times will vary based on machine performance)
