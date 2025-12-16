@@ -1,0 +1,9 @@
+[project]
+name = "bolton-bits"
+version = "0.1.0"
+description = "Practical boltons library demos for Python devs"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "boltons>=25.0.0",
+]
