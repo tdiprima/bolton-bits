@@ -1,4 +1,6 @@
-# Bolton Bits
+# Bolton Bits 🔩
+
+A work in progress.
 
 | Script                    | Description                                   |
 |---------------------------|-----------------------------------------------|
