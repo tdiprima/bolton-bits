@@ -47,10 +47,11 @@ If you try to flatten by doing something like:
 ```python
 flat = []
 for sublist in nested:
-    flat += sublist  # Bad: copies old list into a new one every time
+    # flat += sublist  # OK
+    flat = flat + sublist  # Bad: copies old list into a new one every time
 ```
 
-That's O(n²) because `+=` on lists copies all the elements each time.
+~~That's O(n²) because `+=` on lists copies all the elements each time.~~
 
 `boltons.flatten` uses iterators under the hood, so it doesn't keep re-copying — it just yields items one by one. That's O(n).
 
