@@ -1,6 +1,8 @@
-# Benchmarks naive O(n^2) list operations vs boltons O(n) implementations.
-# Compares bad vs good bucketizing and flattening to demonstrate the
-# significant performance gains from using optimized boltons utilities.
+"""
+Benchmarks naive O(n^2) list operations vs boltons O(n) implementations.
+Compares bad vs good bucketizing and flattening to demonstrate the
+significant performance gains from using optimized boltons utilities.
+"""
 
 import time
 
@@ -29,11 +31,19 @@ def good_bucketize(data):
     return bucketize(data, key=lambda x: x % 10)
 
 
-# --- BAD flattening (O(n^2)-ish) ---
+# --- Not bad flattening 0.0013 sec ---
+# def bad_flatten(nested):
+#     result = []
+#     for sub in nested:
+#         result += sub  # list.extend() is actually O(n)
+#     return result
+
+
+# --- BAD flattening (O(n^2)) ---
 def bad_flatten(nested):
     result = []
     for sub in nested:
-        result += sub  # BAD: creates new list each time
+        result = result + sub  # Creates new list each time - truly O(n²)
     return result
 
 
@@ -64,8 +74,8 @@ print(f"Good bucketize: {good_bucket_time:.4f} sec")
 print(f"Bad flatten: {bad_flatten_time:.4f} sec")
 print(f"Good flatten: {good_flatten_time:.4f} sec")
 
-# Bad bucketize: 8.3587 sec
-# Good bucketize: 0.0203 sec
-# Bad flatten: 0.0013 sec
+# Bad bucketize: 8.4471 sec
+# Good bucketize: 0.0205 sec
+# Bad flatten: 0.2959 sec
 # Good flatten: 0.0478 sec
 # (Times will vary based on machine performance)
