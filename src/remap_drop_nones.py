@@ -1,7 +1,7 @@
 """
 Clean Up a Nested List (Drop None Values)
 Got a messy data structure? Remap it like a pro.
-Lists are simple, but boltons adds remap for transforming 
+Lists are simple, but boltons adds remap for transforming
 nested structures without recursion headaches.
 """
 

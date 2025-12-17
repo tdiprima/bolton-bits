@@ -3,9 +3,9 @@ from boltons.iterutils import bucketize, flatten
 
 # You've got messages categorized by user preference:
 user_messages = {
-    'Alice': [["Hi"], ["How are you?", "Let's meet"]],
-    'Bob': [["Yo!"], ["Got it", "Thanks"], []],
-    'Cara': [["Hey"]]
+    "Alice": [["Hi"], ["How are you?", "Let's meet"]],
+    "Bob": [["Yo!"], ["Got it", "Thanks"], []],
+    "Cara": [["Hey"]],
 }
 
 if __name__ == "__main__":
@@ -21,10 +21,7 @@ if __name__ == "__main__":
     msgs = list(flatten(user_messages.values()))
 
     # Then bucketize by message length: short vs long
-    buckets = bucketize(
-        msgs,
-        key=lambda m: 'short' if len(m) < 5 else 'long'
-    )
+    buckets = bucketize(msgs, key=lambda m: "short" if len(m) < 5 else "long")
 
     print(buckets)
     # Could produce something like:

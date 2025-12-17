@@ -1,7 +1,7 @@
 """
 Chunk a List into Batches
 Processing in batches? chunked is your friend.
-API rate limits or file processing? Batch uploads/downloads 
+API rate limits or file processing? Batch uploads/downloads
 without manual slicing.
 """
 

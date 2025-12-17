@@ -1,7 +1,7 @@
 """
 Cache Expensive Function Calls
 Slow API or computation? Cache it!
-Python has functools.lru_cache, but boltons' cacheutils adds 
+Python has functools.lru_cache, but boltons' cacheutils adds
 flexible, thread-safe caching with extras like thresholds.
 """
 
