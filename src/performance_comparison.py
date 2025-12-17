@@ -10,7 +10,9 @@ from boltons.iterutils import bucketize, flatten
 
 # Prepare a large dataset
 n = 200_000
+# Creates a list of integers from 0 up to n - 1
 data = list(range(n))
+# Builds a list containing n // 100 sublists, where each sublist is the numbers 0 through 99
 nested_data = [list(range(100)) for _ in range(n // 100)]
 
 
