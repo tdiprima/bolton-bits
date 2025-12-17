@@ -45,13 +45,13 @@ You do one thing per item. No extra chaos.
 
 **Examples:**
 
-* 📋 **Reading a list of names**
+* 📋 **Reading a list of names**  
   You read each name once. Double the list → double the time.
 
-* 🧦 **Matching socks one by one**
+* 🧦 **Matching socks one by one**  
   You pick up each sock and check it. Every sock gets one glance.
 
-* 🔍 **Finding a name in an unsorted contact list**
+* 🔍 **Finding a name in an unsorted contact list**  
   Worst case, the name is last, so you check everyone.
 
 **Sentence:**
@@ -64,13 +64,13 @@ Every item interacts with every other item. This is where pain begins.
 
 **Examples:**
 
-* 🤝 **Everyone shaking hands with everyone else**
+* 🤝 **Everyone shaking hands with everyone else**  
   10 people → 45 handshakes. Add more people and it explodes.
 
-* 🧦 **Matching every sock with every other sock**
+* 🧦 **Matching every sock with every other sock**  
   You compare sock A with all others, then sock B with all others... oof.
 
-* 👀 **Comparing everyone's schedule with everyone else's**
+* 👀 **Comparing everyone's schedule with everyone else's**  
   Every person checks conflicts with every other person.
 
 **Sentence:**
@@ -81,8 +81,6 @@ The meeting scheduling turned **O(n²)** because everyone had to check availabil
 
 * **O(n)** = "for each thing, do a thing"
 * **O(n²)** = "for each thing, do a thing for every other thing"
-
-If you want, I can hit you with **coding examples**, **interview analogies**, or **how to spot these in code instantly**.
 
 <br>
 
@@ -139,7 +137,7 @@ for i in range(n):
 * "Pairwise comparison"
 * "This is gonna cook my CPU"
 
-## ⚡ Fast mental shortcuts
+## ⚡️ Fast mental shortcuts
 
 * **One loop** → probably **O(n)**
 * **Two nested loops** → probably **O(n²)**
