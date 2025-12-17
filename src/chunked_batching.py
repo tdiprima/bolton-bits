@@ -1,7 +1,9 @@
-# chunked_batching.py
-# Uses boltons.iterutils.chunked to split lists into fixed-size batches.
-# Useful for API rate limiting, batch processing, or file uploads without
-# manual slicing logic.
+"""
+Chunk a List into Batches
+Processing in batches? chunked is your friend.
+API rate limits or file processing? Batch uploads/downloads 
+without manual slicing.
+"""
 
 from boltons.iterutils import chunked
 

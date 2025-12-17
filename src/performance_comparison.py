@@ -1,4 +1,3 @@
-# performance_comparison.py
 # Benchmarks naive O(n^2) list operations vs boltons O(n) implementations.
 # Compares bad vs good bucketizing and flattening to demonstrate the
 # significant performance gains from using optimized boltons utilities.

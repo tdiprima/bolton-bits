@@ -1,7 +1,9 @@
-# caching_lri_demo.py
-# Demonstrates boltons.cacheutils for memoization with LRI (Least Recently
-# Inserted) eviction policy. Caches expensive function calls with configurable
-# limits and thread-safe operation.
+"""
+Cache Expensive Function Calls
+Slow API or computation? Cache it!
+Python has functools.lru_cache, but boltons' cacheutils adds 
+flexible, thread-safe caching with extras like thresholds.
+"""
 
 from boltons.cacheutils import LRI, cached  # LRI = Least Recently Inserted
 

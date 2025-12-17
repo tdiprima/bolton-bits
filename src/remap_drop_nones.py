@@ -1,7 +1,9 @@
-# remap_drop_nones.py
-# Uses boltons.iterutils.remap to recursively clean nested data structures
-# by removing None values from lists, dicts, and tuples without writing
-# custom recursive walkers.
+"""
+Clean Up a Nested List (Drop None Values)
+Got a messy data structure? Remap it like a pro.
+Lists are simple, but boltons adds remap for transforming 
+nested structures without recursion headaches.
+"""
 
 from boltons.iterutils import remap
 
